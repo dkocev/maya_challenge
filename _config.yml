@@ -1,7 +1,7 @@
 # Site settings
 title: Discover the mysteries of the Maya
 description: ECML PKDD 2021 - Discovery Challenge
-url: ''
+url: 'https://biasvariancelabs.github.io/maya_challenge/'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
