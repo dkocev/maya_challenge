@@ -27,5 +27,44 @@ Additional information regarding the data structure of the Sentinel images is gi
 
 ALS (lidar) dataset: ALS data is provided both in the form of high-quality digital elevation model (DEM) with a 0.5 m spatial resolution, and an ALS visualization composite consisting of slope, sky-view factor and positive openness in separate bands. As the entire area of interest is split into tiles that coincide with Sentinel tiles measuring 240 x 240 meters, ALS derived tiles measure 480 x 480 pixels both for DEM data and visualization composites, in TIFF files.
 
+#### Model output
+
 The output of the models will be prediction of the segmentation masks for each tile in the test set. In particular, for each tile, one has three masks, one for each of the classes of man-made structures – buildings, platforms, and aguadas. These are all binary masks, where black pixels depict the presence of a structure of the selected class, and white pixels correspond to absence of any structures of that class, at some position. 
 
+### Evaluation
+
+The submissions will be evaluated using standard measures for estimating the quality of image segmentation methods. In particular, the predicted segmentation masks will be compared to the ground-truth masks using Intersection Over Union (IoU) score. The IoU score, also referred to as critical success, evaluates the overlap between the predicted segmentation mask and the ground-truth, or in other words the ratio of correctly predicted regions among the predicted regions. 
+
+The submissions will include prediction of the segmentation masks for each tile in the test set. For each tile, the solutions should include three masks, one for each of the classes of structures – buildings, platforms, and aguadas. Each submisssion will be evaluated using the average IoU score between the submitted predictions and the grount truth masks. More specifically, each submission will be evaluated with 4 different average Intersection Over Union (IoU) scores, one for each class of structures and one computed on all predctions. The winning solutions will be determined using the overall average IoU score.
+
+The challenge will also have two separate leaderboards - a private and a public leaderboard (available at the platform). The former will rank the solutions on the complete test dataset, and the potential winners will be determined solely by this ranking - available once the competition has ended. During the competition period, the current ranking will be visible on the public leaderboard, computed on a subset of the test dataset. The best performing solutions from each competitor (that are better than the baseline) on the public leaderboard will be further evaluated for the private leaderboard thus determining the winner. 
+
+#### Submission format
+
+Submissions should of a single **zip** file consisting of prediction of the **987** segmentation masks for each of **329** tiles in the test dataset. In particular, for each tile, the solutions should include three masks, one for each of the classes of structures – buildings, platforms, and aguadas.
+
+These are all binary masks, where black pixels depict the presence of a structure of the selected class, and white pixels correspond to absence of any structures of that class, at some position.
+
+Due to storage limitation each masks should be provided as a separate .npz file (numpy zipped archive) that includes a Compressed Sparse Row boolean matrix with 'True' values denote pixels with the presence of a structure, and 'False' values otherwise. Each .npz should have the following file name:
+
+'tile\_**number**\_mask\_**type**.npz'
+
+where **number** denotes the tile number (an integer in the range of 1765 to 2093) while type denotes the **type** of structure which can be either **aguada**, **building** or **platform**. For example, files named 'tile_1777_mask_building.npz' and 'tile_2090_mask_aguada.npz' are valid submissions, but '1777_platform.npz' or 'Tile_building_3400.npz' are not.
+
+ 
+
+A code snippet for converting a .tif binary mask to a valid .npz file is :
+
+```python
+from scipy import sparse
+from PIL import Image, ImageOps
+import os
+
+def convert_image(img_path):
+    img=Image.open(img_path)
+    return sparse.csr_matrix(ImageOps.invert(img),dtype=bool)
+
+for file in os.listdir('predictions'):
+    fname=os.path.join('predictions/', file)
+    sparse.save_npz(os.path.splitext(fname)[0]+'.npz', convert_image(fname), compressed=True)
+```
