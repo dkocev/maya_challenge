@@ -25,7 +25,7 @@ In particular, the Sentinel-1 satellites  are equipped with Synthetic Aperture R
 
 The competition winners, as well as other competitors determined by the organizers, will be invited to present their work as part of this year's [ECML PKDD 2021 Discovery Challenge](https://2021.ecmlpkdd.org/).
 
-The top-3 solutions, that outscore the baseline solution (provided by the orgnaiziers) will be awarded with:
+The top-3 solutions, that outscore the baseline solution (provided by the organizers) will be awarded with:
 
 1. 2000 EUR (1700+300*)
 2. 1500 EUR (1200+300*)
