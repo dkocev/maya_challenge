@@ -12,9 +12,6 @@ In particular, the Sentinel-1 satellites  are equipped with Synthetic Aperture R
 
 ### [Access the challenge platform](https://competitions.codalab.org/competitions/30429)
 
-**Submit directly**
-
-<iframe src="https://competitions.codalab.org/competitions/submission_widget/30429/" style="height: 500px; width: 100%; border: none;"></iframe>
 
 ### Timeline
 
