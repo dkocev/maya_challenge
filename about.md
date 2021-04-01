@@ -42,6 +42,6 @@ AiTLAS is an open-source toolbox for exploratory and predictive analysis of sate
 
 ### Current leaderboard
 
-iframe src="https://competitions.codalab.org/competitions/leaderboard_widget/30429/" style="height: 500px; width: 100%; border: none;"></iframe>
+<iframe>src="https://competitions.codalab.org/competitions/leaderboard_widget/30429/" style="height: 500px; width: 100%; border: none;"></iframe>
 
 
