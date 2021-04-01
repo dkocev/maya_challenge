@@ -8,7 +8,7 @@ Remote sensing has greatly accelerated traditional archaeological landscape surv
 
 In particular, the Sentinel-1 satellites  are equipped with Synthetic Aperture Radar (SAR) operating globally with frequent revisit periods, while the the Sentinel-2 satellites are equipped with one of the most sophisticated optical sensors (MSI and SWIR), capturing imagery from visible to medium-infrared spectrum with a spatial resolution of 10-60m. While the latter has been shown to lead to accurate performance on a variety of remote sensing tasks, the data from the optical sensors is heavily dependent on the presence of cloud cover, therefore combining it with  radar data from the Sentinel-1 satellites provides an additional benefit. Integrating  Sentinel data has been shown to lead to improved performance for different tasks of land-use and land-cover classification. This is the goal of the challenge: 
 
-*Explore the potential of the Sentinel satellite data (as well as making use of the available lidar data) for integrated image segmentation in order to locate and identify “lost” ancient Maya settlements(aguadas, platforms and buildings) hidden under the thick forest canopy.*
+*Explore the potential of the Sentinel satellite data, in combination with the available lidar data, for integrated image segmentation in order to locate and identify “lost” ancient Maya settlements (aguadas, buildings and platforms), hidden under the thick forest canopy.*
 
 ### [Access the challenge platform](https://competitions.codalab.org/competitions/30429)
 
