@@ -10,12 +10,19 @@ In particular, the Sentinel-1 satellites  are equipped with Synthetic Aperture R
 
 *Explore the potential of the Sentinel satellite data (as well as making use of the available lidar data) for integrated image segmentation in order to locate and identify “lost” ancient Maya settlements(aguadas, platforms and buildings) hidden under the thick forest canopy.*
 
-### [Comeptition platform](https://competitions.codalab.org/competitions/30429)
+### [Access the challenge platform](https://competitions.codalab.org/competitions/30429)
+
+### Timeline
+
+- April 1st, 2021 - **Challenge starts** - Fill-in [this form](https://forms.gle/pycuAiAZoCkrgsyg8) to get access of the traning dataset. Teams (of up-to 10 people) can make 3 submission per day or total of 100 submissions on [the challenge platform](https://competitions.codalab.org/competitions/30429). The performance of each submission can be viewed on the public leaderboard. 
+- July 1st, 2021 - **Challenge ends** - The submission system closes. The organiziers will further evaluate the submissions to determine the winners. Organiziers will contact competitors for implementation details of their solution.
+- July 8th, 2021 - **Official challenge results** - Official results are publised. Prizes are awarded
+- Jully 26nd, 2021 - **Short paper submission** for ECML PKDD 2021 Discovery Challenge of the winning and selected solutions
 
 
 ### Cometition prizes
 
-The competition winners, as well as other competitors determined by the organizers, will be invited to present their work at the ECML PKDD 2021 Discovery Challenge.
+The competition winners, as well as other competitors determined by the organizers, will be invited to present their work as part of this year's [ECML PKDD 2021 Discovery Challenge](https://2021.ecmlpkdd.org/).
 
 The top-3 solutions, that outscore the baseline solution (provided by the orgnaiziers) will be awarded with:
 
@@ -23,7 +30,11 @@ The top-3 solutions, that outscore the baseline solution (provided by the orgnai
 2. 1500 EUR (1200+300*)
 3. 1000 EUR (700+300*)
 
-\*additional 300 EUR will be awarded if the competitors used the AiTLAS toolbox in their solution or their implementation is fully compatible within AiTLAS (this is to be decided after code review post-competition)
+**\*additional 300 EUR will be awarded if the competitors used the [AiTLAS toolbox](https://biasvariancelabs.github.io/aitlas) in their solution or their implementation is fully compatible within AiTLAS**(this is to be decided after the code review post-competition).
+
+#### AiTLAS 
+
+AiTLAS is an open-source toolbox for exploratory and predictive analysis of satellite imaginary pertaining to a variety of different tasks in Earth Observation. AiTLAS has several distinguishing properties. First, it is modular and flexible - allowing for easy configuration, implementation and extension of new data and models. Next, it is general and applicable to a variety of tasks and workflows. Finally, it is user-friendly. This, besides aiding the AI community by providing access to structured EO data, more importantly, facilitates and accelerates the uptake of (advanced) machine learning methods by the EO experts, thus bringing these two communities closer together. AiTLAS is available [here](https://biasvariancelabs.github.io/aitlas).
 
 
 

@@ -32,3 +32,7 @@ permalink: /org/
 - ZRC SAZU, Slovenia
 - Jozef Stefan Institute, Slovenia
 - Phi-Lab, ESRIN, European Space Agency, Italy
+
+### Contact
+
+info@bvlabs.ai
