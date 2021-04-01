@@ -31,6 +31,22 @@ ALS (lidar) dataset: ALS data is provided both in the form of high-quality digit
 
 The output of the models will be prediction of the segmentation masks for each tile in the test set. In particular, for each tile, one has three masks, one for each of the classes of man-made structures – buildings, platforms, and aguadas. These are all binary masks, where black pixels depict the presence of a structure of the selected class, and white pixels correspond to absence of any structures of that class, at some position. 
 
+An example of masks for tile_44 for (left to right) aguada, building and platform.
+
+<kbd><img src="/maya_challenge/res/tile_44_mask_aguada.png" width="150" height="150" style="border: 1px solid #000" /></kbd>
+<kbd><img src="/maya_challenge/res/tile_44_mask_building.png" width="150" height="150" style="border: 1px solid #000" /></kbd>
+<kbd><img src="/maya_challenge/res/tile_44_mask_platform.png" width="150" height="150" style="border: 1px solid #000" /></kbd>
+
+
+
+
+<!--
+![tile_44_mask_aguada](/maya_challenge/res/tile_44_mask_aguada.png)
+![tile_44_mask_platfrom](/maya_challenge/res/tile_44_mask_platform.png)
+![tile_44_mask_building](/maya_challenge/res/tile_44_mask_building.png)
+-->
+
+
 ### Evaluation
 
 The submissions will be evaluated using standard measures for estimating the quality of image segmentation methods. In particular, the predicted segmentation masks will be compared to the ground-truth masks using Intersection Over Union (IoU) score. The IoU score, also referred to as critical success, evaluates the overlap between the predicted segmentation mask and the ground-truth, or in other words the ratio of correctly predicted regions among the predicted regions. 
